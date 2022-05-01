@@ -15,12 +15,7 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <style>
-    /* ==========================================
-    FOR DEMO PURPOSE
-  ========================================== */
-/* body {
-  background: #2a2e32;
-} */
+    
 
 .text-small {
   font-size: 0.9rem;
@@ -103,11 +98,11 @@ footer {
           <label for="pri">Product Price :</label>
           <input type="text" class="form-control" id="pri" name="Price">
         </div>
-        <!-- <div class="form-group">
-          <label for="pic">Product Picture :</label>
-          <input type="image" class="form-control" id="pic" name="Picture">
-          <input type="file" class="form-control" name="picture" placeholder="Enter URL Image">
-        </div> -->
+        <div class="form-group">
+          <label for="pic">Product Image :</label>
+          <!-- <input type="image" class="form-control" id="pic" name="Picture"> -->
+          <input type="url" class="form-control" name="picture" placeholder="Enter URL Image">
+        </div>
         <button type="submit" class="btn btn-primary" style="background-color: brown;">Add Product</button>
       </form>
     </div>
@@ -117,20 +112,22 @@ $pro = array();
 if(!empty($_POST['namepro'])){
     if(!empty($_POST['Description'])){
         if(!empty($_POST['Price'])){
-$img_url = "http://yallabook.com/blog/uploade/files/200531_422549d0c5.jpg";
+          if(!empty($_POST['picture'])){
+// $img_url = "http://yallabook.com/blog/uploade/files/200531_422549d0c5.jpg";
+
     if(!isset( $_SESSION['pro'])){
     $_SESSION['pro'] = array() ;
     }
     array_push( $pro , $_POST['namepro']);
     array_push( $pro , $_POST['Description']);
-    array_push( $pro ,$img_url );
+    // array_push( $pro ,$img_url );
+    array_push( $pro , $_POST['picture']);
     array_push( $pro , $_POST['Price']);
-
-
     array_push($_SESSION['pro'] , $pro );
 
 
-} } }
+} } } 
+}
 ?>
 <br><br>
   <!-- table -->
@@ -203,10 +200,10 @@ $img_url = "http://yallabook.com/blog/uploade/files/200531_422549d0c5.jpg";
     
                     <form action="#">
                         <div class="input-group mb-3">
-                        <a href=""><i class='fab fa-facebook' style='font-size:48px;color:white'></i></a>
-                        <a href=""><i class='fab fa-instagram' style='font-size:48px;color:white; margin-left:15px;'></i></a>
-                        <a href=""><i class='fab fa-github' style='font-size:48px;color:white; margin-left:15px;'></i></a>
-                        <a href=""><i class='fab fa-linkedin' style='font-size:48px;color:white; margin-left:15px;'></i></a>
+                        <a href="https://ar-ar.facebook.com/"><i class='fab fa-facebook' style='font-size:48px;color:white'></i></a>
+                        <a href="https://www.instagram.com/"><i class='fab fa-instagram' style='font-size:48px;color:white; margin-left:15px;'></i></a>
+                        <a href="https://github.com/Sujood-Mohammad"><i class='fab fa-github' style='font-size:48px;color:white; margin-left:15px;'></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class='fab fa-linkedin' style='font-size:48px;color:white; margin-left:15px;'></i></a>
                         </div> 
                     </form>
                 </div>

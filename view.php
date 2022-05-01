@@ -11,13 +11,7 @@
   </head>
 
   <style>
-    /* ==========================================
-    FOR DEMO PURPOSE
-  ========================================== */
-/* body {
-  background: #2a2e32;
-} */
-
+  
 .text-small {
   font-size: 0.9rem;
 }
@@ -91,7 +85,7 @@ for ($i=0; $i < count($_SESSION['pro']); $i++) {
 
 echo '
 <div class="card" style = " box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 300px;margin: 50px;text-align: center;font-family: arial; display:inline-block;">
-  <img src= "'. $p[2] .'" style="width:100%">
+  <img src= "'. $p[2] .'" style="width:100%; height: 300px;">
   <h1>'.$p[0].'<h1>
   <p class="price" style = "color: grey;font-size: 22px;">'.$p[1].'</p>
   <p>'.$p[3].'</p>
@@ -138,10 +132,10 @@ echo '
     
                     <form action="#">
                         <div class="input-group mb-3">
-                        <a href=""><i class='fab fa-facebook' style='font-size:48px;color:white'></i></a>
-                        <a href=""><i class='fab fa-instagram' style='font-size:48px;color:white; margin-left:15px;'></i></a>
-                        <a href=""><i class='fab fa-github' style='font-size:48px;color:white; margin-left:15px;'></i></a>
-                        <a href=""><i class='fab fa-linkedin' style='font-size:48px;color:white; margin-left:15px;'></i></a>
+                        <a href="https://ar-ar.facebook.com/"><i class='fab fa-facebook' style='font-size:48px;color:white'></i></a>
+                        <a href="https://www.instagram.com/"><i class='fab fa-instagram' style='font-size:48px;color:white; margin-left:15px;'></i></a>
+                        <a href="https://github.com/Sujood-Mohammad"><i class='fab fa-github' style='font-size:48px;color:white; margin-left:15px;'></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class='fab fa-linkedin' style='font-size:48px;color:white; margin-left:15px;'></i></a>
                         </div> 
                     </form>
                 </div>
