@@ -12,6 +12,7 @@
 
   <style>
   
+
 .text-small {
   font-size: 0.9rem;
 }
@@ -84,21 +85,20 @@ for ($i=0; $i < count($_SESSION['pro']); $i++) {
 // '; 
 
 echo '
-<div class="card" style = " box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 300px;margin: 50px;text-align: center;font-family: arial; display:inline-block;">
-  <img src= "'. $p[2] .'" style="width:100%; height: 300px;">
+<div class="card" style = " box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 350px;margin: 25px;text-align: center;font-family: arial; display:inline-block;">
+  <img src= "'. $p[2] .'" style="width: 310px; height: 300px;">
   <h1>'.$p[0].'<h1>
   <p class="price" style = "color: grey;font-size: 22px;">'.$p[1].'</p>
   <p>'.$p[3].'</p>
-  
+  <button type="submit" class="btn btn-primary" style="background-color: brown;">Add Cart</button>
 </div>';
-
 
 }
 ?>
 
- <form action="add.php" method="post" style ="margin-left:50px;">
+ <!-- <form action="add.php" method="post" style ="margin-left:50px;">
         <button type="submit" class="btn btn-primary" style="background-color: brown;">Add Product</button>
-           </form>
+           </form> -->
 
 <!-- footer -->
 <div class="d-flex flex-column h-100" style = "margin-top:50px; ">

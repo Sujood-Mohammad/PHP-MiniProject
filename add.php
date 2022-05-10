@@ -15,8 +15,15 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <style>
-    
-
+   
+table{
+  background: rgb(215 174 174);
+  width: 90%;
+}
+th{
+  background:brown;
+  color :white;
+}
 .text-small {
   font-size: 0.9rem;
 }
@@ -32,12 +39,12 @@ a:hover, a:focus {
 }
 
 .form-control {
-  background: brown;
+  background: rgb(215 174 174);
   border-color: #545454;
 }
 
 .form-control:focus {
-  background: brown;
+  background: rgb(236 230 230);
 }
 
 footer {
@@ -49,6 +56,13 @@ footer {
   body, html {
     height: 100%;
   }
+  .table td, .table th {
+    border : 2px solid brown;
+  }
+  /* .table{
+    width: 80%;
+  } */
+  
     </style>
   <body>
       
@@ -75,7 +89,7 @@ footer {
     </div>
     <!-- new line-->
     <div class="container-fluid">
-        <div class="jumbotron" style="background-color: rgb(249, 230, 201);">
+        <div class="jumbotron" style="background-color:rgb(215 174 174);">
           <h1>Welcome To Our Store</h1>      
           <p>Dear merchant, you are welcome to our store to display your products and earn <br> a lot of money and to reach a larger number of customers </p>
           <button type="button" class="btn btn-info" style="background-color: brown;">Learn More</button>
@@ -84,7 +98,7 @@ footer {
     <!-- new -->
 
     <div class="container">
-      <h2>E-commerce Form</h2>
+      <h2>Add Product</h2>
       <form action="add.php" method="post">
         <div class="form-group">
           <label for="namepro">Name Product :</label>
